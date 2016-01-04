@@ -36,6 +36,7 @@ SchemaGenerator.prototype.files = function files() {
 	this.schemaFields = (typeof fields != 'undefined') ? fields : ['title:String', 'content:String', 'created:Date'];
 	this.mockData = "{}";
 	mkdirp('test');
+	this.template('_route.js','./app/routes/' + name + '.js');
 	//this.template('_api.js', 'api/' + name + '.js');
 	this.template('_schema.js', './app/models/' + name + '.js');
 
