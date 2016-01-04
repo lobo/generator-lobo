@@ -16,6 +16,42 @@ Then generate your new project:
 yo lobo
 ```
 
+### Run the app
+
+Development mode
+```bash
+$ grunt
+```
+or
+
+```bash
+$ grunt server
+```
+
+Production mode
+```bash
+$ grunt prod
+```
+
+
+
+### Sub Generator Schema
+
+Run the sub generator for schemas:
+
+```
+$ yo mongoose:schema "article|title:String,excerpt:String,content:String,published:Boolean,created:Date"
+```
+
+output:
+
+    You're creating a schema for article
+    With the fields: title,excerpt,content,published,created
+       create routes/article.js
+       create models/article.js
+    starting request to schematic for test mock data...
+       create test/test-article.js
+
 ## Getting To Know Yeoman
 
 Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he&#39;s very easy to work with. If you think he&#39;s too opinionated, he can be easily convinced. Feel free to [learn more about him](http://yeoman.io/).

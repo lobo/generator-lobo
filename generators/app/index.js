@@ -30,7 +30,7 @@ module.exports = yeoman.generators.Base.extend({
 
   // Wolf: here I create the structure of my repository
   generateBasic: function() {
-    mkdirp('./app/middlewares');
+    mkdirp('./app/middleware');
     mkdirp('./app/models');
     mkdirp('./app/routes');
     mkdirp('./config');
@@ -40,11 +40,11 @@ module.exports = yeoman.generators.Base.extend({
   writing: function () {
     this.fs.copy(
       this.templatePath('access_control_headers.js'),
-      this.destinationPath('./app/middlewares/access_control_headers.js')
+      this.destinationPath('./app/middleware/access_control_headers.js')
     ),
     this.fs.copy(
       this.templatePath('error_handler.js'),
-      this.destinationPath('./app/middlewares/error_handler.js')
+      this.destinationPath('./app/middleware/error_handler.js')
     );
     /* Wolf: this is how you template:
     this.fs.copyTpl(

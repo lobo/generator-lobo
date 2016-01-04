@@ -35,11 +35,9 @@ SchemaGenerator.prototype.files = function files() {
 	this.lowSchemaName = this.schemaName.toLowerCase();
 	this.schemaFields = (typeof fields != 'undefined') ? fields : ['title:String', 'content:String', 'created:Date'];
 	this.mockData = "{}";
-	mkdirp('models');
 	mkdirp('test');
-	mkdirp('api');
 	//this.template('_api.js', 'api/' + name + '.js');
-	this.template('_schema.js', 'models/' + name + '.js');
+	this.template('_schema.js', './app/models/' + name + '.js');
 
 };
 
