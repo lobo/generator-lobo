@@ -16,25 +16,6 @@ Then generate your new project:
 yo lobo
 ```
 
-### Run the app
-
-Development mode
-```bash
-$ grunt
-```
-or
-
-```bash
-$ grunt server
-```
-
-Production mode
-```bash
-$ grunt prod
-```
-
-
-
 ### Sub Generator Schema
 
 Run the sub generator for schemas:
